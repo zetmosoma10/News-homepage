@@ -1,11 +1,13 @@
 import Button from "./Components/Button";
 import Navbar from "./Components/Navbar";
+import Features from "./Containers/Features";
 
 function App() {
   return (
-    <main className="container mx-auto px-4 max-w-screen-lg font-display texts-base text-dark_grayish_blue ">
+    <main className="max-w-screen-xl mx-auto px-4  font-display texts-base text-dark_grayish_blue ">
       {/* <Navbar /> */}
-      <Button />
+      {/* <Button /> */}
+      <Features />
     </main>
   );
 }
