@@ -17,10 +17,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: ["prettier-plugin-tailwindcss"],
 };
-
-// Off-white: hsl(36, 100%, 99%)
-// Grayish blue: hsl(233, 8%, 79%)
-// Dark grayish blue: hsl(236, 13%, 42%)
-// Very dark blue: hsl(240, 100%, 5%)

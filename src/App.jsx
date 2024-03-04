@@ -1,10 +1,10 @@
+import Navbar from "./Components/Navbar";
+
 function App() {
   return (
-    <div className="bg-soft_red">
-      <h1 className=" font-display text-3xl font-bold underline text-dark_grayish_blue">
-        Hello world!
-      </h1>
-    </div>
+    <main className="container mx-auto px-4 max-w-screen-lg font-display texts-base text-dark_grayish_blue ">
+      <Navbar />
+    </main>
   );
 }
 
