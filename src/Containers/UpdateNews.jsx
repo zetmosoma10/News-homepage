@@ -7,7 +7,10 @@ const UpdateNews = () => {
         New
       </h2>
       {updates.map((item) => (
-        <div className="pb-7 border-b border-grayish_blue">
+        <div
+          key={item.heading}
+          className="pb-7 border-b last:border-0 border-grayish_blue"
+        >
           <a
             href="#"
             className="font-extrabold leading-6 text-xl transition-all hover:text-soft_orange hover:duration-75"

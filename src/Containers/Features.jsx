@@ -2,7 +2,7 @@ import { features } from "../Constants";
 
 const Features = () => {
   return (
-    <section className="flex flex-col  gap-8 lg:flex-row md:justify-between">
+    <section className="flex flex-col  gap-8 lg:flex-row md:justify-between mt-[60px] lg:mt-[70px]">
       {features.map((item) => (
         <div key={item.title} className="flex gap-6 ">
           <img

@@ -3,16 +3,16 @@ import UpdateNews from "./UpdateNews";
 
 const Hero = () => {
   return (
-    <section className="grid lg:grid-cols-3">
+    <section className="grid lg:grid-cols-3 lg:gap-x-8 mt-8 lg:mt-[60px]">
       <div className="  w-full lg:col-span-2 order-1 ">
         <picture>
           <source
             media="(max-width: 1023px)"
-            srcset="src/assets/images/image-web-3-mobile.jpg"
+            srcSet="src/assets/images/image-web-3-mobile.jpg"
           />
           <source
             media="(min-width: 1024px)"
-            srcset="src/assets/images/image-web-3-desktop.jpg"
+            srcSet="src/assets/images/image-web-3-desktop.jpg"
           />
           <img
             src="src/assets/images/image-web-3-desktop.jpg"
@@ -21,7 +21,7 @@ const Hero = () => {
           />
         </picture>
       </div>
-      <div className="lg:h-full w-full mt-[64px] lg:mt-0 lg:row-span-2 order-3 lg:order-2">
+      <div className="lg:h-full w-full mt-[64px]  lg:mt-0 lg:row-span-2 order-3 lg:order-2">
         <UpdateNews />
       </div>
       <div className="flex flex-col gap-4 lg:flex-row lg:mt-5 w-full lg:col-span-2 order-2 lg:order-3">

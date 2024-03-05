@@ -24,7 +24,9 @@ const Navbar = () => {
         <ul className=" hidden  md:flex">
           {navLinks.map((link) => (
             <li className="md:ml-10" key={link.name}>
-              <a href={link.to}>{link.name}</a>
+              <a className=" hover:text-soft_red " href={link.to}>
+                {link.name}
+              </a>
             </li>
           ))}
         </ul>
@@ -33,10 +35,10 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        className={`${toogleSidebar ? "" : "hidden"} fixed top-0 left-0 w-screen h-screen  opacity-97  md:hidden`}
+        className={`${toogleSidebar ? "" : "hidden"} fixed top-0 left-0 w-screen h-screen  md:hidden`}
       >
         <div
-          className={`absolute top-0 right-0 p-4  h-screen bg-off_white w-4/6 `}
+          className={`absolute top-0 right-0 p-4  h-screen bg-off_white w-4/6 z-10`}
         >
           <div
             className="flex justify-end items-center cursor-pointer"
@@ -48,7 +50,7 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <li className="mb-6" key={link.name}>
                 <a
-                  className="text-very_dark_blue hover:underline focus:underline outline-none"
+                  className="text-very_dark_blue hover:text-soft_red focus:underline outline-none"
                   href={link.to}
                 >
                   {link.name}
