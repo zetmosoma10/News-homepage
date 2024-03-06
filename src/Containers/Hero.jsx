@@ -8,14 +8,14 @@ const Hero = () => {
         <picture>
           <source
             media="(max-width: 1023px)"
-            srcSet="src/assets/images/image-web-3-mobile.jpg"
+            srcSet="/images/image-web-3-mobile.jpg"
           />
           <source
             media="(min-width: 1024px)"
-            srcSet="src/assets/images/image-web-3-desktop.jpg"
+            srcSet="/images/image-web-3-desktop.jpg"
           />
           <img
-            src="src/assets/images/image-web-3-desktop.jpg"
+            src="/images/image-web-3-desktop.jpg"
             alt="hero image"
             className="w-full"
           />

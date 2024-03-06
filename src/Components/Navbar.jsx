@@ -1,8 +1,5 @@
 import { useState } from "react";
 import { navLinks } from "../Constants";
-import Logo from "../assets/images/logo.svg";
-import MenuIcon from "../assets/images/icon-menu.svg";
-import CloseIcon from "../assets/images/icon-menu-close.svg";
 
 const Navbar = () => {
   const [toogleSidebar, setToogleSidebar] = useState(false);
@@ -19,7 +16,7 @@ const Navbar = () => {
     <header>
       <nav className="flex justify-between items-center pt-3">
         <div>
-          <img src={Logo} alt="logo" />
+          <img src="/images/images/logo.svg" alt="logo" />
         </div>
         <ul className=" hidden  md:flex">
           {navLinks.map((link) => (
@@ -31,7 +28,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="block md:hidden cursor-pointer" onClick={showSidebar}>
-          <img src={MenuIcon} alt="menu icon" />
+          <img src="/images/icon-menu.svg" alt="menu icon" />
         </div>
       </nav>
       <div
@@ -44,7 +41,7 @@ const Navbar = () => {
             className="flex justify-end items-center cursor-pointer"
             onClick={removeSidebar}
           >
-            <img src={CloseIcon} alt="close menu icon" />
+            <img src="/images/icon-menu-close.svg" alt="close menu icon" />
           </div>
           <ul className="mt-20">
             {navLinks.map((link) => (
