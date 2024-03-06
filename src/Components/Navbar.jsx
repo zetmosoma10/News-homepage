@@ -16,7 +16,7 @@ const Navbar = () => {
     <header>
       <nav className="flex justify-between items-center pt-3">
         <div>
-          <img src="/images/images/logo.svg" alt="logo" />
+          <img src="/images/logo.svg" alt="logo" />
         </div>
         <ul className=" hidden  md:flex">
           {navLinks.map((link) => (
